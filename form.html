@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form modal</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container"></div>
+    <div class="side-image">
+        <img src="https://images.pexels.com/photos/1820563/pexels-photo-1820563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="road into nature">
+    </div>
+    </div>
+
+    <form id="form-content" action="#" method="post">
+        <div id="form-header">
+        <legend>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veniam quos saepe, fuga itaque, molestiae blanditiis voluptatum nihil dolorum aliquam, reiciendis quidem! Eaque cupiditate, aliquam quod aliquid minima quisquam placeat!</legend>
+           </div>
+
+        <div id="form-elements">
+        <h1>Let's do this</h1>
+
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first-name" placeholder="Bob..." required>
+        
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" placeholder="Grigore..." required>
+
+        <label for="user-email">Email adress:</label>
+        <input type="email" id="user-email" required placeholder="you@example.com">
+
+        <label for="user-password">Password:</label>
+        <input type="password" id="user-password" required placeholder="password">
+
+        <label for="conf-password">Confirm Password:</label>
+        <input type="password" id="conf-password" required placeholder="password">
+        </div>
+        <div id="form-footer">
+            <button id="create-account">Create Account</button>
+            <p>Already have an account?</p>
+                <a href="#">Log-in</a>
+        
+        </div>
+    </form>
+    
+
+    <script src="form.js"></script>
+</body>
+</html>
