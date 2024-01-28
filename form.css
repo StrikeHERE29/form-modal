@@ -48,17 +48,16 @@ font-style: italic;
     background: url("https://images.pexels.com/photos/3227984/pexels-photo-3227984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-repeat: no-repeat;
     background-size: cover;
-
     position: relative;
+    
 }
 
 .img-element p{
-position: absolute;
+position:absolute;
 color: white;
 font-weight: bold;
 bottom: 0;
-right: 0;
-margin-right: 10px;
+
 }
 
 .img-element a{
@@ -145,4 +144,24 @@ input{
 input:focus{
     border: 2px solid blue;
     box-shadow: 5px 5px 5px #888;
+}
+
+.overPhoto{
+    background-color: rgba(0,0,0,0.3);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#odin-photo{
+    width: 80px;
+    height: 80px;
+
+}
+
+h1{
+    color: white;
+    font-family: 'Rubik Glitch Pop', system-ui;
+    letter-spacing: 5px;
 }

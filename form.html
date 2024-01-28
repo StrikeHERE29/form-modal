@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -18,6 +21,10 @@
         
             <div class="img-element">
                 <p>Photo by <a href="https://www.pexels.com/@szaboviktor/">Szabó Viktor</a> on <a href="https://www.pexels.com/">Pexels</a> </p>
+                <div class="overPhoto">
+                    <img id="odin-photo" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="odin">
+               <h1>ODIN</h1>
+                </div>
             </div>
            <div class="main">
             <div class="quote">
@@ -32,18 +39,18 @@
                         <div class="column">
                             <div class="input-wrapper">
                                 <label for="first-name">First Name</label>
-                                <input type="text" id="first-name">
+                                <input type="text" id="first-name" required minlength="3" >
                             </div>
                     
                             
                     
                             <div class="input-wrapper">
                                 <label for="email">Email</label>
-                                <input type="email" id="email">
+                                <input type="email" id="email" required>
                             </div>
                             <div class="input-wrapper">
                                 <label for="password">Password</label>
-                                <input type="password" id="password">
+                                <input type="password" id="password" required minlength="6" maxlength="8">
                             </div>
                         </div>
                     
@@ -51,19 +58,20 @@
 
                             <div class="input-wrapper">
                                 <label for="last-name">Last Name</label>  
-                                <input type="text" id="last-name">  
+                                <input type="text" id="last-name" required>  
                             </div>
                             
                             <div class="input-wrapper">
                                 <label for="phone-number">Phone Number</label>
-                                <input type="number" id="phone-number">
+                                <input type="number" id="phone-number" pattern="^(07\d{8}|03\d{8})$" required >
                             </div>
                     
                             
                     
                             <div class="input-wrapper">
                                 <label for="confirm-password">Confirm password</label>
-                                <input type="password" id="confirm-password">
+                                <input type="password" id="confirm-password" required minlength="6" maxlength="8">
+                                <p id="text-confirmation"></p>
                             </div>
                         </div>
 
