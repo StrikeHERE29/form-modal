@@ -165,3 +165,10 @@ h1{
     font-family: 'Rubik Glitch Pop', system-ui;
     letter-spacing: 5px;
 }
+
+button:hover{
+    transform: translateY(-10px);
+    transition: transform ease-in-out 0.2s;
+}
+
+
